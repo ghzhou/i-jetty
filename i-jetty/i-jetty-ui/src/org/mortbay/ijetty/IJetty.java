@@ -93,7 +93,7 @@ public class IJetty extends Activity
     public static final int __SETUP_NOTDONE = 0;
 
     
-    public static final File __JETTY_DIR;
+    public static File __JETTY_DIR;
     private Button startButton;
     private Button stopButton;
     private Button configButton;
@@ -300,7 +300,8 @@ public class IJetty extends Activity
     
     static
     {
-        __JETTY_DIR = new File(Environment.getExternalStorageDirectory(),"jetty"); 
+//        __JETTY_DIR = new File(Environment.getExternalStorageDirectory(),"jetty");
+
         // Ensure parsing is not validating - does not work with android
         System.setProperty("org.eclipse.jetty.xml.XmlParser.Validating","false");
 
@@ -419,7 +420,7 @@ public class IJetty extends Activity
     public void onCreate(Bundle icicle)
     {
         super.onCreate(icicle);
-        
+        __JETTY_DIR = this.getDir("jetty", MODE_PRIVATE);
         setContentView(R.layout.jetty_controller);
         
         startButton = (Button)findViewById(R.id.start);

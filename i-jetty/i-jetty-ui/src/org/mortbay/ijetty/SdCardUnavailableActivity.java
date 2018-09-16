@@ -48,7 +48,8 @@ public class SdCardUnavailableActivity extends Activity
     
     public static boolean isExternalStorageAvailable()
     {
-        return Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState());
+        return true;
+        //return Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState());
     }
 
     private void refreshSDState()
