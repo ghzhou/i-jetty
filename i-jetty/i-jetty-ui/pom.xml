@@ -56,13 +56,13 @@
       <sourceDirectory>src</sourceDirectory>
       <plugins>
         <plugin>
-          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-          <artifactId>maven-android-plugin</artifactId>
-          <version>2.9.0-beta-5</version>
+          <groupId>com.simpligility.maven.plugins</groupId>
+          <artifactId>android-maven-plugin</artifactId>
+          <version>4.5.0</version>
           <extensions>true</extensions>
           <configuration>
               <sdk>
-                  <platform>4</platform>
+                  <platform>9</platform>
               </sdk>
               <deleteConflictingFiles>true</deleteConflictingFiles>
               <extractDuplicates>true</extractDuplicates> 

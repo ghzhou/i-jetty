@@ -38,12 +38,12 @@
               <goal>exec</goal>
             </goals>
             <configuration>
-              <!-- executable>${env.ANDROID_HOME}/platform-tools/dx</executable -->
+		    <!-- executable>${env.ANDROID_HOME}/build-tools/19.0.1/dx</executable -->
               <executable>java</executable>
               <arguments>
                <!-- <argument>-JXmx1024M</argument> -->
                 <argument>-jar</argument>
-                <argument>${env.ANDROID_HOME}/platform-tools/lib/dx.jar</argument>
+		<argument>${env.ANDROID_HOME}/build-tools/19.0.1/lib/dx.jar</argument>
                 <argument>--dex</argument>
                 <argument>--verbose</argument>
                 <argument>--core-library</argument>

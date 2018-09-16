@@ -14,7 +14,7 @@
     <module>apk</module>
   </modules>
   <properties>
-     <android.version>1.6_r2</android.version>
+     <android.version>2.3.1</android.version>
      <jetty.version>7.6.0.RC4</jetty.version>
      <servlet.version>2.5-20081211</servlet.version>
   </properties>
