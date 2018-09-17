@@ -7,3 +7,4 @@ target
 *.patch
 *.diff
 **/.idea/
+*.iml
